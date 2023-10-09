@@ -13,7 +13,7 @@ require_once('nusoap.php');
 $parameters = array('num'=>$_GET['num']);
 
 //now we must create a soapclient object
-$soapclient = new soapclient('http://localhost/prueba/server.php');
+$soapclient = new soapclient('http://localhost/server.php');
 
 //now we call the server.
 $result=$soapclient->call('es_primo',$parameters);
